@@ -132,7 +132,7 @@ const clipSite = id => {
 // inject the necessary scripts
 browser.storage.sync.get(defaultOptions).then(options => {
     checkInitialSettings(options);
-    
+
     document.getElementById("selected").addEventListener("click", (e) => {
         e.preventDefault();
         toggleClipSelection(options);
@@ -149,7 +149,7 @@ browser.storage.sync.get(defaultOptions).then(options => {
         e.preventDefault();
         toggleDownloadImages(options);
     });
-    
+
     return browser.tabs.query({
         currentWindow: true,
         active: true
@@ -162,7 +162,7 @@ browser.storage.sync.get(defaultOptions).then(options => {
     })
     .then(() => {
         return browser.tabs.executeScript(id, {
-            file: "/contentScript/contentScript.js"
+            file: "/frontend/content.js"
         });
     }).then( () => {
         console.info("Successfully injected MarkDownload content script");
@@ -223,7 +223,7 @@ function notify(message) {
         document.getElementById("title").value = message.article.title;
         imageList = message.imageList;
         mdClipsFolder = message.mdClipsFolder;
-        
+
         // show the hidden elements
         document.getElementById("container").style.display = 'flex';
         document.getElementById("spinner").style.display = 'none';

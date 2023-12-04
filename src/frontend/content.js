@@ -22,11 +22,11 @@ function getHTMLOfDocument() {
     if (!baseEl.getAttribute('href')) {
         baseEl.setAttribute('href', window.location.href);
     }
-    
+
     // remove the hidden content from the page
 
     removeHiddenNodes(document.body);
-    
+
     // get the content of the page as a string
     return document.documentElement.outerHTML;
 }
@@ -56,7 +56,7 @@ function removeHiddenNodes(root) {
     }
     return root
   }
-  
+
 
 // code taken from here: https://stackoverflow.com/a/5084044/304786
 function getHTMLOfSelection() {
@@ -152,7 +152,7 @@ function downloadImage(filename, url) {
 }
 
 (function loadPageContextScript(){
-    var s = document.createElement('script');
-    s.src = browser.runtime.getURL('contentScript/pageContext.js');
+    let s = document.createElement('script');
+    s.src = browser.runtime.getURL('frontend/page-context.js');
     (document.head||document.documentElement).appendChild(s);
 })()

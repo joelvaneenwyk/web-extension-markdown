@@ -68,14 +68,14 @@ One of the best features of MarkDownload is that it is highly customizable. Open
 
 ### Title Template
 
-This is what will be displayed in the popup as the file's title, and what will be the resulting markdown file's filename. Utilizes [Custom Text Substitutions](#Custom%20Text%20Substitutions)
+This is what will be displayed in the popup as the file's title, and what will be the resulting markdown file's filename. Utilizes [Custom Text Substitutions](#custom-text-substitutions)
 
 **Default value:** `{title}`
 
 ### Subfolder
 
-**Only available if [Download Mode](#Download%20Mode) is set to "Downloads API" (Not supported in Safari)**
-This specifies a subfolder within your downloads folder to save downloaded files. A security limitation of modern browsers prevents this folder being outside the browser's specified downloads folder. Utilizes [Custom Text Substitutions](#Custom%20Text%20Substitutions)
+**Only available if [Download Mode](#download-images) is set to "Downloads API" (Not supported in Safari)**
+This specifies a subfolder within your downloads folder to save downloaded files. A security limitation of modern browsers prevents this folder being outside the browser's specified downloads folder. Utilizes [Custom Text Substitutions](#custom-text-substitutions)
 
 **Default value:** (none)
 
@@ -91,7 +91,7 @@ This is the text you would like to appear at the start or end of any downloaded 
 
 **Default value (front):**
 
-```
+```markdown
 ---
 created: {date:YYYY-MM-DDTHH:mm:ss} (UTC {date:Z})
 tags: [{keywords}]
@@ -118,17 +118,17 @@ This specifies the method to use for downloading Markdown files. Set to "Content
 
 ### Show Save As Dialog
 
-**Only available if [Download Mode](#Download%20Mode) is set to "Downloads API" (Not supported in Safari)**
-When this is on, the Save As popup will show when downloading a markdown file through the extension, regardless of the browser's current settings. Note that this is *not* recommended if [Download Images](#Download%20Images) is on.
+**Only available if [Download Mode](#download-images) is set to "Downloads API" (Not supported in Safari)**
+When this is on, the Save As popup will show when downloading a markdown file through the extension, regardless of the browser's current settings. Note that this is *not* recommended if [Download Images](#download-images) is on.
 
 ### Download Images
 
-**Only available if [Download Mode](#Download%20Mode) is set to "Downloads API" (Not supported in Safari)**
+**Only available if [Download Mode](#download-images) is set to "Downloads API" (Not supported in Safari)**
 Turning this on will download images alongside Markdown files you download. The Markdown can even be adjusted to link to these local images, rather than the online ones (depending on your [Image Format](#Image Format) setting).
 
 ### Image Filename Prefix
 
-**Only available if [Download Images](#Download%20Images) is on (Not supported in Safari)**
+**Only available if [Download Images](#download-images) is on (Not supported in Safari)**
 This allows you to provide a prefix and/or subfolder for images downloaded alongside markdown files. Including a forward slash (`/`) will specify a subfolder.
 
 **Default value:** `{title}/` — this means images will download in a folder with the same name as the Markdown file
@@ -261,7 +261,7 @@ Figure 1: ![](http://example.com/img/image.jpg)
 Figure 1:
 ```
 
-**The following options only apply if [Download Images](#Download%20Images) is on (Not supported in Safari)**
+**The following options only apply if [Download Images](#download-images) is on (Not supported in Safari)**
 
 - Pure Markdown
 

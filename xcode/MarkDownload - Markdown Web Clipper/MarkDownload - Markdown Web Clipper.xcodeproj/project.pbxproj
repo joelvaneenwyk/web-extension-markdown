@@ -21,7 +21,7 @@
 		F88D6F7125DDEF0B001F90AF /* browser-polyfill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F6A25DDEF0B001F90AF /* browser-polyfill.min.js */; };
 		F88D6F7225DDEF0B001F90AF /* icons in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F6B25DDEF0B001F90AF /* icons */; };
 		F88D6F7325DDEF0B001F90AF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F6C25DDEF0B001F90AF /* manifest.json */; };
-		F88D6F7425DDEF0B001F90AF /* contentScript in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F6D25DDEF0B001F90AF /* contentScript */; };
+		F88D6F7425DDEF0B001F90AF /* frontend in Resources */ = {isa = PBXBuildFile; fileRef = F88D6F6D25DDEF0B001F90AF /* frontend */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		F88D6F6A25DDEF0B001F90AF /* browser-polyfill.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "browser-polyfill.min.js"; path = "../../../src/browser-polyfill.min.js"; sourceTree = "<group>"; };
 		F88D6F6B25DDEF0B001F90AF /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../src/icons; sourceTree = "<group>"; };
 		F88D6F6C25DDEF0B001F90AF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../src/manifest.json; sourceTree = "<group>"; };
-		F88D6F6D25DDEF0B001F90AF /* contentScript */ = {isa = PBXFileReference; lastKnownFileType = folder; name = contentScript; path = ../../../src/contentScript; sourceTree = "<group>"; };
+		F88D6F6D25DDEF0B001F90AF /* frontend */ = {isa = PBXFileReference; lastKnownFileType = folder; name = frontend; path = ../../../src/frontend; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				F88D6F6A25DDEF0B001F90AF /* browser-polyfill.min.js */,
 				F88D6F6B25DDEF0B001F90AF /* icons */,
 				F88D6F6C25DDEF0B001F90AF /* manifest.json */,
-				F88D6F6D25DDEF0B001F90AF /* contentScript */,
+				F88D6F6D25DDEF0B001F90AF /* frontend */,
 			);
 			name = Resources;
 			path = "MarkDownload - Markdown Web Clipper Extension";
@@ -250,7 +250,7 @@
 				F88D6F7125DDEF0B001F90AF /* browser-polyfill.min.js in Resources */,
 				F88D6F7025DDEF0B001F90AF /* popup in Resources */,
 				F88D6F6E25DDEF0B001F90AF /* background in Resources */,
-				F88D6F7425DDEF0B001F90AF /* contentScript in Resources */,
+				F88D6F7425DDEF0B001F90AF /* frontend in Resources */,
 				F88D6F7225DDEF0B001F90AF /* icons in Resources */,
 				F88D6F7325DDEF0B001F90AF /* manifest.json in Resources */,
 				F88D6F6F25DDEF0B001F90AF /* options in Resources */,

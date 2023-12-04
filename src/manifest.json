@@ -37,7 +37,7 @@
       "background/moment.min.js",
       "background/turndown.js",
       "background/turndown-plugin-gfm.js",
-      "/background/Readability.js",
+      "background/readability/readability.js",
       "shared/context-menus.js",
       "shared/default-options.js",
       "background/background.js"
@@ -85,7 +85,7 @@
     "copy_tab_to_obsidian": {
       "description": "Copy current tab as Markdown to Obsidian"
     }
-    
+
   },
   "browser_specific_settings": {
     "gecko": {

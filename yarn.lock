@@ -3722,7 +3722,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    web-ext: "npm:^7.4.0"
+    web-ext: "npm:^7.9.0"
   languageName: unknown
   linkType: soft
 
@@ -4436,7 +4436,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-ext@npm:^7.4.0":
+"web-ext@npm:^7.9.0":
   version: 7.9.0
   resolution: "web-ext@npm:7.9.0"
   dependencies:
