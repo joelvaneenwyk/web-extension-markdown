@@ -1,15 +1,19 @@
-# MarkDownload - Markdown Web Clipper
+# Obsidian Connector
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/deathau/markdownload?style=for-the-badge&sort=semver)](https://github.com/deathau/markdownload/releases/latest)
+This web extension is based on the excellent [MarkDownload](https://github.com/deathau/markdownload) by [Gordon Pedersen aka. `deathau`](https://github.com/deathau) which was originally based on [markdown-clipper](https://github.com/ariesdevil/markdown-clipper) by [Yijun Zhao aka. `ariesdevil`](https://github.com/ariesdevil).
+
+⚠️ This plugin is very much a work in progress and not recommended for use in production or really at all until there is a stable release.
+
+---
 
 This is an extension to clip websites and download them into a readable markdown file. Please keep in mind that it is not guaranteed to work on all websites.
 
 To use this add-on, simply click the add-on icon while you are browsing the page you want to save offline. A popup will show the rendered markdown so you can make minor edits or copy the text, or you can click the download button to download an .md file.
 Selecting text will allow you to download just the selected text
 
-See the [Markdownload User Guide](https://github.com/deathau/markdownload/blob/master/user-guide.md#markdownload-user-guide) for more details on the functionality of this extension
+See the [User Guide](docs/user-guide.md#markdownload-user-guide) for more details on the functionality of this extension
 
-# Installation
+## Installation
 
 The extension is available for [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/markdownload/), [Google Chrome](https://chrome.google.com/webstore/detail/markdownload-markdown-web/pcmpcfapbekmbjjkdalcgopdkipoggdi), [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/hajanaajapkhaabfcofdjgjnlgkdkknm) and [Safari](https://apple.co/3tcU0pD).
 
@@ -60,13 +64,13 @@ in my hat via the following:
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/deathau?style=social)](https://github.com/sponsors/deathau)
 [![Paypal](https://img.shields.io/badge/paypal-deathau-yellow?style=social&logo=paypal)](https://paypal.me/deathau)
 
-# Version History
+## Version History
 
-## 3.2.1
+### 3.2.1
 
 - Bugfixes for the Obsidian integration (thanks @aancw !)
 
-## 3.2.0
+### 3.2.0
 
 - Added a basic Obsidian integration using the [Obsidian Advanced URI](https://vinzent03.github.io/obsidian-advanced-uri/) plugin and clipboard (thanks @aancw !)
 - Keep sub/sup tags so that superscript and subscript text is retained (thanks @mnaoumov !)
@@ -74,7 +78,7 @@ in my hat via the following:
 - Added a new context menu item to copy all tabs as a list of markdown links
 - Updated dependencies
 
-## 3.1.0
+### 3.1.0
 
 - Firefox for Android (nightly) support
 - Updated Readability and Turndown
@@ -107,7 +111,7 @@ in my hat via the following:
   - `{pathname}` - An initial `'/'` followed by the path of the URL, not including the query string or fragment.
   - `{search}` - The URL's parameter string; if any parameters are provided, this string includes all of them, beginning with the leading `?` character.
 
-## 3.0.0
+### 3.0.0
 
 - Theme revamp
 - Utilizing CodeMirror for the Markdown Editor
@@ -121,14 +125,14 @@ in my hat via the following:
 - Strip out 'red dot' special characters
 - Added an option to specify a download path (within the downloads folder). Thanks to Nikita Lukianets!
 
-## 2.4.1
+### 2.4.1
 
 - Add option for Obsidian-style image links (when downloading images with the markdown file)
 - Downloaded images should download relative to the markdown file in the case where you specify a subfolder in your title template
 - Front- and back-matter template will no longer put in extra lines on Opera
 - Adjusted the way text is copied to the clipboard
 
-## 2.4.0
+### 2.4.0
 
 - Fixed typo on options page (thanks Dean Cook)
 - Added option to download images alongside the markdown file
@@ -142,11 +146,11 @@ in my hat via the following:
 - Auto-focus the download button (you can now `ctrl`+`shift`+`M`, Enter to quickly download a file)
 - Template title (and image prefixes) now allow forward slashes (`/`) so that files get saved to a subfolder
 
-## 2.3.1
+### 2.3.1
 
 - Added template toggle to Firefox's tab context menu
 
-## 2.3.0
+### 2.3.0
 
 - Added contexy menus for copying markdown
 - Added options to clip selected text
@@ -156,25 +160,25 @@ in my hat via the following:
 - Added option to always show Save As
 - Added context menus to download all tabs as markdown
 
-## 2.2.0
+### 2.2.0
 
 - Added extension options
   - Turndown (markdown generation) options
   - Front-matter/back-matter templates with replacement variables from page metadata (and date)
 
-## 2.1.6
+### 2.1.6
 
 - Replace non-breaking spaces in filenames
 
-## 2.1.5
+### 2.1.5
 
 - Fixed an issue with sites with invalid `<base>` tags
 
-## 2.1.4
+### 2.1.4
 
 - Fixed issue with relative links [#1](https://github.com/deathau/markdownload/issues/1)
 
-## 2.1.3
+### 2.1.3
 
 - Fist change, forked from [enrico-kaack/markdown-clipper](https://github.com/enrico-kaack/markdown-clipper)
 - Added URL to markdown output ([#5](https://github.com/deathau/markdownload/issues/5))
