@@ -6,7 +6,7 @@
     "start:edge": "web-ext --source-dir src/ run -t chromium --chromium-binary \"C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe\" -u https://en.wikipedia.org/wiki/Special:Random --bc",
     "start:firefox": "web-ext --source-dir src/ run -f firefox -u https://en.wikipedia.org/wiki/Special:Random --bc",
     "start:chrome": "web-ext --source-dir src/ run -t chromium --chromium-binary \"C:\\Program Files\\Google\\Chrome Dev\\Application\\chrome.exe\" -u https://en.wikipedia.org/wiki/Special:Random --bc",
-    "start:wavebox": "web-ext --source-dir src/ run -t chromium --chromium-binary %localappdata%/WaveboxApp/Application/wavebox.exe",
+    "start:wavebox": "web-ext --source-dir src/ run -t chromium --chromium-binary %LocalAppData%/WaveboxApp/Application/wavebox.exe",
     "start:android": "adb connect 127.0.0.1:58526 && web-ext run -t firefox-android --adb-device 127.0.0.1:58526 --firefox-apk org.mozilla.fenix"
   },
   "devDependencies": {

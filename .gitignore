@@ -1,3 +1,4 @@
+.gdn/
 web-ext-artifacts
 xcode/MarkDownload - Markdown Web Clipper/MarkDownload - Markdown Web Clipper.xcodeproj/project.xcworkspace
 xcode/MarkDownload - Markdown Web Clipper/MarkDownload - Markdown Web Clipper.xcodeproj/xcuserdata
@@ -5,4 +6,3 @@ xcode/MarkDownload - Markdown Web Clipper/MarkDownload - Markdown Web Clipper.xc
 node_modules
 .pnp.cjs
 .pnp.loader.mjs
-
